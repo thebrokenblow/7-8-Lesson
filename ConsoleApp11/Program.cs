@@ -1,15 +1,18 @@
-﻿using ConsoleApp11.ChainOfResponsibility;
-using ConsoleApp11.Iterator;
-using ConsoleApp11.Mediator;
+﻿
+//SOLID
+
+//Single Responsibility Principle (Принцип единственной обязанности)
+
+//Open/Closed Principle (Принцип открытости/закрытости)
+
+//Liskov Substitution Principle (Принцип подстановки Лисков)
+
+//Interface Segregation Principle (Принцип разделения интерфейсов)
+
+//Dependency Inversion Principle (Принцип инверсии зависимостей)
 
 
-var myMainMediator = new MyMainMediator();
 
-var colleague1 = new Colleague1(myMainMediator);
-var colleague2 = new Colleague2(myMainMediator);
 
-myMainMediator.Colleague1 = colleague1;
-myMainMediator.Colleague2 = colleague2;
 
-colleague1.Send("Привет");
-colleague2.Send("Пока");
+
